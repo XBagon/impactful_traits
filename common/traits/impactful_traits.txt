@@ -1,0 +1,95 @@
+trait_pc_anti_habitability_barren_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_nuked_preference.dds"
+	modifier = {
+    pc_anti_habitability_barren_cold_habitability = 100
+    pc_anti_habitability_barren_habitability = 100
+    pc_nuked_habitability = 100
+    pc_ringworld_habitable_habitability = 100
+    pc_ai_habitability = 100
+    pc_gaia_habitability = -100
+    pc_desert_habitability = -100
+    pc_arid_habitability = -100
+    pc_tropical_habitability = -100
+    pc_continental_habitability = -100
+    pc_tundra_habitability = -100
+    pc_ocean_habitability = -100
+    pc_arctic_habitability = -100
+	}
+}
+
+trait_pc_anti_habitability_barren_cold_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_nuked_preference.dds"
+	modifier = {
+    pc_anti_habitability_barren_cold_habitability = 100
+    pc_anti_habitability_barren_habitability = 100
+    pc_nuked_habitability = 100
+    pc_ringworld_habitable_habitability = 100
+    pc_ai_habitability = 100
+    pc_gaia_habitability = -100
+    pc_desert_habitability = -100
+    pc_arid_habitability = -100
+    pc_tropical_habitability = -100
+    pc_continental_habitability = -100
+    pc_tundra_habitability = -100
+    pc_ocean_habitability = -100
+    pc_arctic_habitability = -100
+	}
+}
+
+trait_photosynthesis = {
+	cost = 1
+	modifier = {
+		pop_food_req_mult = -1
+    tile_resource_energy_mult = -0.3
+	}
+  opposites = { "trait_organic_reactor" }
+}
+
+trait_organic_reactor = {
+	cost = 1
+	modifier = {
+		pop_food_req_mult = +0.5
+    tile_resource_energy_mult = +0.2
+	}
+  opposites = { "trait_photosynthesis" }
+}
+
+trait_anti_habitability = {
+	cost = 1
+	modifier = {
+    pc_anti_habitability_barren_cold_habitability = 100
+    pc_anti_habitability_barren_habitability = 100
+    pc_nuked_habitability = 100
+    pc_ringworld_habitable_habitability = 100
+    pc_ai_habitability = 100
+    pc_gaia_habitability = -100
+    pc_desert_habitability = -100
+    pc_arid_habitability = -100
+    pc_tropical_habitability = -100
+    pc_continental_habitability = -100
+    pc_tundra_habitability = -100
+    pc_ocean_habitability = -100
+    pc_arctic_habitability = -100
+	}
+  opposites = { "trait_nonadaptive" "trait_adaptive" "trait_robust" "trait_extremely_adaptive" }
+}
+
+trait_war_machine = {
+	cost = 1
+	modifier = {
+		all_technology_research_speed = -0.5
+		category_military_theory_research_speed_mult = 1
+		army_health = 0.2
+		army_damage_mult = 0.2
+		army_morale = 0.5
+		army_defense_morale_mult = 0.5
+		army_defense_damage_mult = 0.5
+		army_attack_morale_mult = 0.5
+		army_attack_damage_mult = 0.5
+		army_morale_damage_mult = 0.5
+	}
+}
+
+trait_xenophob_phil = {
+	cost = 1
+}

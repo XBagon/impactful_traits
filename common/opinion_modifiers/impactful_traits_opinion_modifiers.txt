@@ -1,0 +1,18 @@
+opinion_xenophob_phil = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 100
+      FROM = {
+        has_ethic = "ethic_fanatic_xenophobe"
+      }
+		}
+		modifier = {
+			add = 100
+      has_trait = "trait_xenophob_phil"
+			FROM = {
+        has_ethic = "ethic_fanatic_xenophobe"
+      }
+		}
+	}
+}

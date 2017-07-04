@@ -1,0 +1,62 @@
+namespace = impactful_traits
+
+event = {
+  id = impactful_traits.1
+  is_triggered_only = yes
+  hide_window = yes
+
+  immediate = {
+    every_planet = { limit = { is_planet_class = pc_barren }
+      change_pc = pc_anti_habitability_barren
+      add_modifier = {
+        modifier = "barren"
+        days = -1
+      }
+      every_tile = {
+        random_list = {
+          20 = { set_blocker = tb_deep_sinkhole }
+          20 = { set_blocker = tb_crater }
+          20 = { set_blocker = tb_mountain_range }
+          40 = {}
+        }
+      }
+    }
+    every_planet = { limit = { is_planet_class = pc_barren_cold }
+      change_pc = pc_anti_habitability_barren_cold
+      add_modifier = {
+        modifier = "barren"
+        days = -1
+      }
+      every_tile = {
+        random_list = {
+          20 = { set_blocker = tb_massive_glacier }
+          20 = { set_blocker = tb_crater }
+          20 = { set_blocker = tb_mountain_range }
+          40 = {}
+        }
+      }
+    }
+    every_planet = { limit = { is_homeworld = yes OWNER = { has_trait = "trait_anti_habitability" } }
+      add_modifier = {
+        modifier = "barren"
+        days = -1
+      }
+      change_pc = pc_anti_habitability_barren
+    }
+  }
+}
+
+event = {
+  id = impactful_traits.2
+  is_triggered_only = yes
+  hide_window = yes
+
+  immediate = {
+    every_country = { limit = { OR = { has_ethic = ethic_fanatic_xenophobe has_ethic = ethic_fanatic_xenophobe }}
+      add_opinion_modifier = {
+        modifier = opinion_xenophob_phil
+        who = root
+      }
+    }
+  }
+}

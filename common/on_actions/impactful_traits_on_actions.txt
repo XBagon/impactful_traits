@@ -1,0 +1,12 @@
+on_game_start = {
+	events = {
+    impactful_traits.1
+		impactful_traits.2
+	}
+}
+
+on_planet_attackers_win = {
+	events = {
+		impactful_traits.1
+	}
+}

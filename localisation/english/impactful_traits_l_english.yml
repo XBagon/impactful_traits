@@ -1,0 +1,16 @@
+﻿l_english:
+
+ trait_photosynthesis:0 "Photosynthesis"
+ trait_photosynthesis_desc:0 "This species doesn't need food to survive, but uses the energy of the sun."
+ trait_organic_reactor:0 "Organic Reactor"
+ trait_organic_reactor_desc:0 "This species produces energy in their bodies."
+ trait_anti_habitability:0 "Anti-Habitability"
+ trait_anti_habitability_desc:0 "Strangely this species is perfectly designed for environments any other species would avoid."
+ trait_war_machine:0 "War Machine"
+ trait_war_machine_desc:0 "Members of this species are war machines, they are made for the war, but not that intelligent in other matters."
+ barren:0 "Barren"
+ barren_desc:0 "This world is barren, only very few species can survive here and the establishing of infrastructure is also very hard."
+ pc_anti_habitability_barren:0 "Barren World"
+ pc_anti_habitability_barren_desc:0 "Barren and rocky world with a thin or non-existent atmosphere. The surface is covered in meteor impact craters and completely devoid of life."
+ pc_anti_habitability_barren_cold:0 "Barren World"
+ pc_anti_habitability_barren_cold_desc:0 "Barren and rocky world with a thin or non-existent atmosphere. The surface is covered in meteor impact craters and completely devoid of life."
