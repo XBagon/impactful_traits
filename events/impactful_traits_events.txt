@@ -60,3 +60,58 @@ event = {
     }
   }
 }
+
+country_event = {
+  title = "Leader Death Misery"
+  id = impactful_traits.3
+  is_triggered_only = yes
+
+  desc = { text = impactful_traits.3.desc }
+
+  option = {
+    name = "This is a sad time for our nation!"
+    add_modifier = { modifier = "leader_death_misery" days = 360 }
+  }
+}
+
+event = {
+  id = impactful_traits.4
+  is_triggered_only = yes
+  hide_window = yes
+
+  immediate = {
+    every_pop = { limit = { has_trait = "trait_fast_evolving" }
+      random_list = {
+        1 = { modify_species = { species = ROOT add_trait = trait_agrarian }}
+        1 = { modify_species = { species = ROOT add_trait = trait_thrifty }}
+        1 = { modify_species = { species = ROOT add_trait = trait_industrious }}
+        1 = { modify_species = { species = ROOT add_trait = trait_intelligent }}
+        1 = { modify_species = { species = ROOT add_trait = trait_natural_engineers }}
+        1 = { modify_species = { species = ROOT add_trait = trait_natural_physicists }}
+        1 = { modify_species = { species = ROOT add_trait = trait_natural_sociologists }}
+        1 = { modify_species = { species = ROOT add_trait = trait_extremely_adaptive }}
+        1 = { modify_species = { species = ROOT add_trait = trait_nonadaptive }}
+        1 = { modify_species = { species = ROOT add_trait = trait_rapid_breeders }}
+        1 = { modify_species = { species = ROOT add_trait = trait_slow_breeders }}
+        1 = { modify_species = { species = ROOT add_trait = trait_talented }}
+        1 = { modify_species = { species = ROOT add_trait = trait_quick_learners }}
+        1 = { modify_species = { species = ROOT add_trait = trait_slow_learners }}
+        1 = { modify_species = { species = ROOT add_trait = trait_very_strong }}
+        1 = { modify_species = { species = ROOT add_trait = trait_strong }}
+        1 = { modify_species = { species = ROOT add_trait = trait_weak }}
+        1 = { modify_species = { species = ROOT add_trait = trait_nomadic }}
+        1 = { modify_species = { species = ROOT add_trait = trait_sedentary }}
+        1 = { modify_species = { species = ROOT add_trait = trait_communal }}
+        1 = { modify_species = { species = ROOT add_trait = trait_solitary }}
+        1 = { modify_species = { species = ROOT add_trait = trait_charismatic }}
+        1 = { modify_species = { species = ROOT add_trait = trait_repugnant }}
+        1 = { modify_species = { species = ROOT add_trait = trait_photosynthesis }}
+        1 = { modify_species = { species = ROOT add_trait = trait_organic_reactor }}
+        1 = { modify_species = { species = ROOT add_trait = trait_anti_habitability }}
+        1 = { modify_species = { species = ROOT add_trait = trait_war_machine }}
+        1 = { modify_species = { species = ROOT add_trait = trait_xenophob_phil }}
+        1 = { modify_species = { species = ROOT add_trait = trait_deathless }}
+      }
+    }
+  }
+}

@@ -93,3 +93,13 @@ trait_war_machine = {
 trait_xenophob_phil = {
 	cost = 1
 }
+
+trait_deathless = {
+	cost = 1
+	modifier = { leader_age = 150 }
+	opposites = { "trait_enduring" "trait_fleeting" "trait_venerable" }
+}
+
+trait_fast_evolving = {
+	cost = 1
+}

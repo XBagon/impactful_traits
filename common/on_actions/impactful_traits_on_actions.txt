@@ -10,3 +10,15 @@ on_planet_attackers_win = {
 		impactful_traits.1
 	}
 }
+
+on_leader_death = {
+	events = {
+		impactful_traits.3
+	}
+}
+
+on_decade_pulse = {
+	events = {
+		impactful_traits.4
+	}
+}
